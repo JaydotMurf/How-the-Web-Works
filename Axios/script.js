@@ -1,17 +1,17 @@
-async function getData() {
-  const response = await axios.get('https://swapi.dev/api/planets/');
-  const { next: secondPage, results: firstSetOfResults } = response.data;
 
-  firstSetOfResults
-    .map((planet) => planet.name)
-    .forEach((planet) => console.log(planet));
+// ! Star Wars Data API
+// async function getData() {
+//   const response = await axios.get('https://swapi.dev/api/planets/');
+//   const { next: secondPage, results: firstSetOfResults } = response.data;
+//   const listOfPlanets = document.querySelector('#planets-list')
 
-  const secondResponse = await axios.get(secondPage);
-  const { next, thirdPage, results: secondSetOfResults } = secondResponse.data;
+//   firstSetOfResults
+//     .map((planet) => planet.name)
+//     .forEach((planet) => {
+//       const newLI = document.createElement('LI');
+//       newLI.innerText = planet;
+//       listOfPlanets.append(newLI);
+//     });
+// }
 
-  secondSetOfResults
-    .map((planet) => planet.name)
-    .forEach((planet) => console.log(planet));
-}
-
-getData();
+// getData();
