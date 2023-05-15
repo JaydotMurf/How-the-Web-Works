@@ -5,23 +5,29 @@
   <meta charset="UTF-8">
   <title>Giphy Party!</title>
   <!-- ! Bootstrap -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-<!-- ! Jquery -->
-<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-<!-- ! Axios -->
-<script src="https://unpkg.com/axios/dist/axios.js"></script>
-<script src="app.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <!-- ! Jquery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <!-- ! Axios -->
+  <script src="https://unpkg.com/axios/dist/axios.js"></script>
+  <script src="app.js" defer></script>
 </head>
-<body>
+
+<body style="background-color: #a0fefb;">
   <div class="container">
-    <h1 class="mt-5">GIF Search</h1>
-    <form id="search-form" class="mt-4">
+    <!-- <h1 class="mt-5">GIF Search</h1> -->
+    <div class="jumbotron" style="background-color: #494fc1;">
+      <h1 class="display-4 text-center" style="color: #a0fefb;">GIFtastic</h1>
+      <p class="lead text-center" style="color: #a0fefb;">Find Your GIF</p>
+    </div>
+    <form id="search-form" class="mt-4 p-1">
       <div class="form-group">
-        <label for="search-input">Search for a GIF:</label>
+        <label for="search-input" style="color: #494fc1;">Search for a GIF:</label>
         <div class="input-group">
           <input type="text" id="search-input" class="form-control" placeholder="Enter search term" required>
           <div class="input-group-append">
-            <button type="submit" class="btn btn-primary">Search</button>
+            <button type="submit" class="btn btn-primary" style="background-color: #fd084a;">Search</button>
           </div>
         </div>
       </div>
@@ -31,4 +37,5 @@
     </div>
   </div>
 </body>
+
 </html>
