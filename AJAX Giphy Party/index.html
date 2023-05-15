@@ -11,28 +11,33 @@
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
   <!-- ! Axios -->
   <script src="https://unpkg.com/axios/dist/axios.js"></script>
-  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
 </head>
 
 <body style="background-color: #a0fefb;">
-  <div class="container">
-    <!-- <h1 class="mt-5">GIF Search</h1> -->
-    <div class="jumbotron" style="background-color: #494fc1;">
+  <div class="container-fluid">
+    <div class="jumbotron mt-4" style="background-color: #494fc1;">
       <h1 class="display-4 text-center" style="color: #a0fefb;">GIFtastic</h1>
       <p class="lead text-center" style="color: #a0fefb;">Find Your GIF</p>
     </div>
-    <form id="search-form" class="mt-4 p-1">
+    <form id="search-form" class="">
       <div class="form-group">
         <label for="search-input" style="color: #494fc1;">Search for a GIF:</label>
         <div class="input-group">
           <input type="text" id="search-input" class="form-control" placeholder="Enter search term" required>
           <div class="input-group-append">
-            <button type="submit" class="btn btn-primary" style="background-color: #fd084a;">Search</button>
+            <button type="submit" class="btn btn-outline-danger" >Search</button>
           </div>
         </div>
       </div>
     </form>
-    <div id="gif-container" class="gif-container mt-4">
+    <div id="gif-container" class="gif-container mt-2">
+      <div class="row justify-content-sm-start">
+        <div class="col-4">
+          <button id="remove-all-button" class="btn btn-outline-danger btn-sm" >Remove All</button>
+        </div>
+      </div>
       <!-- GIF will be displayed here -->
     </div>
   </div>
