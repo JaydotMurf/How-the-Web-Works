@@ -1,15 +1,11 @@
-body {
-    /* This margin just makes the text easier to read. You can remove it if you want since it can mess with your other styles. */
-    margin-top: 40px;
-  }
   
   body::before {
     content: 'XS';
     color: red;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: bold;
     position: fixed;
-    top: 0;
+    bottom: 0;
     right: 0;
   }
   
